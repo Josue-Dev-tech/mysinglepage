@@ -1,0 +1,11 @@
+
+<div class="card border " [ngClass]="{'cliked': message==='Ne plus Like'}">
+  <img [src]="facenap.imageurl" class="card-img-top" [alt]="facenap.title" >
+  <div class="card-body">
+    <h2>{{ facenap.title| titlecase}}</h2>
+<p>Poste {{ facenap.postDate | date: ' le d MMMM yyyy' }}</p>
+<p>{{ facenap.description }}</p>
+  <button (click)="onViewFaceNap()">Voir plus</button>
+  </div>
+</div>
+

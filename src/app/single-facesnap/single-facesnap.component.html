@@ -1,0 +1,23 @@
+
+
+<div class="card border " [ngClass]="{'cliked': message==='Ne plus Like'}">
+  <img [src]="facenap.imageurl" class="card-img-top" [alt]="facenap.title" >
+  <div class="card-body">
+<a routerLink="/facesnaps" class="btn btn-danger">Retour</a>
+
+    <h2>{{ facenap.title | titlecase}}</h2>
+<p>Poste {{ facenap.postDate | date: ' le d MMMM yyyy' }}</p>
+<p>{{ facenap.description }}</p>
+<p>image</p>
+<p *ngIf="facenap.localisation">Photo prise a: {{ facenap.localisation }} </p>
+
+<p>Nombre de linked <span [ngStyle]="{color:'rgb(0,'+facenap.likded+',0)'}">{{ facenap.likded}}</span></p>
+<p>{{ 0.499454 | percent: '1.0-3' }}</p>
+
+<p>{{ 3948859.4994 | number }}</p>
+<p>{{ 2560.52 | currency: 'EUR'}}</p>
+
+<button (click)="linkImage()" class="btn btn-success" >{{ message | titlecase}}</button>
+  </div>
+</div>
+

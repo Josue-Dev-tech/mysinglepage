@@ -1,0 +1,28 @@
+
+
+.card{
+  background: #f0c7c7;
+  // width: 500px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+}
+img{
+  width: 200px;
+}
+.cliked{
+  // background: #ffadad;
+  background-color: rgb(lightgreen, 0.5);
+  color: darkgreen;
+  button{
+    box-shadow: lightgreen 3px 3px 3px;
+    border-radius: 3px;
+  }
+  &:active{
+    box-shadow: lightgreen 0px 0px 5px;
+  }
+}
+

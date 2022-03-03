@@ -1,3 +1,4 @@
+import { Computer } from './models/Computer.model';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'snapface';
+  //c'est ici que je vais declarer mes objets en les ejectant
+
+
 }
